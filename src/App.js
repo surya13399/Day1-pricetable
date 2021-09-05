@@ -1,24 +1,63 @@
-import logo from './logo.svg';
+
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div id="root">
+    <div class="container">
+      <div class="free">
+          <h4 class="price">FREE</h4>
+          <p class="plan-amount">0$
+          <span class="plan-duration">/month</span></p>
+          <hr></hr>
+          <ul class="plan-list">
+            <li>Single User</li>
+            <li>5GB Storage</li>
+            <li>Unlimited Public Projects</li>
+            <li>Community Access</li>
+            <li>Unlimited Private Projects</li>
+            <li>Dedicated Phone Support</li>
+            <li>Free Subdomain</li>
+            <li>Monthly Status Reports</li>
+          </ul>
+          <button>BUTTON</button>
+      </div>
+      <div class="plus">
+          <h4 class="price">PLUS</h4>
+          <p class="plan-amount">$9
+          <span class="plan-duration">/month</span></p>
+          <hr></hr>
+          <ul class="plan-list">
+            <li>5 User</li>
+            <li>50GB Storage</li>
+            <li>Unlimited Public Projects</li>
+            <li>Community Access</li>
+            <li>Unlimited Private Projects</li>
+            <li>Dedicated Phone Support</li>
+            <li>Free Subdomain</li>
+            <li>Monthly Status Reports</li>
+          </ul>
+          <button>BUTTON</button>
+      </div>
+      <div class="pro">
+          <h4 class="price">PRO</h4>
+          <p class="plan-amount">$49
+          <span class="plan-duration">/month</span></p>
+          <hr></hr>
+          <ul class="plan-list">
+            <li><b>Unlimited users</b></li>
+            <li>150GB Storage</li>
+            <li>Unlimited Public Projects</li>
+            <li>Community Access</li>
+            <li>Unlimited Private Projects</li>
+            <li>Dedicated Phone Support</li>
+            <li>Free Subdomain</li>
+            <li>Monthly Status Reports</li>
+          </ul>
+          <button>BUTTON</button>
+      </div>
     </div>
+</div>  
   );
 }
 

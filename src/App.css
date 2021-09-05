@@ -1,38 +1,133 @@
-.App {
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(
+90deg
+,#0062e6,#33aeff);
+  display: grid;
+  place-items: center;
+  height: 100vh;
+}
+.container {
+  margin: 1rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 50px;
+  gap: 50px;
+}
+div {
+  display: block;
+}
+.plan-duration {
+  font-size: .8rem;
+}
+li {
+  display: list-item;
+  text-align: -webkit-match-parent;
+}
+.free {
+  border: none;
+    border-radius: 1rem;
+    width: 100%;
+    box-shadow: 0 0.5rem 1rem 0 rgb(0 0 0 / 10%);
+    background: #fff;
+    padding: 1rem;
+}
+.plan-amount {
   text-align: center;
+  font-size: 3rem;
+  margin: 0;
+}
+.price {
+  text-align: center;
+  font-weight: 700;
+  color: #989fa4;
+  margin: .5rem;
+}
+.free:first-child .plan-list li:nth-child(n+5) {
+  opacity: .3;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h4 {
+  display: block;
+  margin-block-start: 1.33em;
+  margin-block-end: 1.33em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.plan-list li{
+    margin-bottom: 16px;
+    display: flex;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+li {
+  display: list-item;
+  text-align: -webkit-match-parent;
+}
+button {
+  width: 100%;
+  letter-spacing: .1rem;
+  border: none;
+  border-radius: 5rem;
+  font-size: 80%;
+  padding: 1rem;
+  opacity: .7;
+  transition: all .2s;
+  background: linear-gradient(
+90deg
+,#0062e6,#33aeff);
+  color: #fff;
+}
+.plus {
+  border: none;
+  border-radius: 1rem;
+  width: 100%;
+  box-shadow: 0 0.5rem 1rem 0 rgb(0 0 0 / 10%);
+  background: #fff;
+  padding: 1rem;
+}
+.plus:nth-child(2) .plan-list li:nth-child(n+8) {
+  opacity: .3;
+}
+.pro {
+  border: none;
+    border-radius: 1rem;
+    width: 100%;
+    box-shadow: 0 0.5rem 1rem 0 rgb(0 0 0 / 10%);
+    background: #fff;
+    padding: 1rem;
+}
+.pro :nth-child(3) .plan-list li:first-child, button {
+  font-weight: 700;
 }
 
-.App-link {
-  color: #61dafb;
+@media (min-width: 760px)
+.container {
+    grid-template-columns: repeat(3,1fr);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+@media (min-width: 420px)
+.container {
+    grid-template-columns: 1fr;
+}
+
+.free:hover {
+  margin-top: -0.25rem;
+  margin-bottom: 0.25rem;
+  box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.3);
+  transition: all 0.2s;
+}
+.plus:hover {
+  margin-top: -0.25rem;
+  margin-bottom: 0.25rem;
+  box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.3);
+  transition: all 0.2s;
+}
+.pro:hover {
+  margin-top: -0.25rem;
+  margin-bottom: 0.25rem;
+  box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.3);
+  transition: all 0.2s;
 }
